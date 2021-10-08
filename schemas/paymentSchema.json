@@ -1,0 +1,565 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
+        "payment": {
+            "$id": "#/properties/payment",
+            "type": "object",
+            "required": [
+                "id",
+                "created_at",
+                "updated_at",
+                "amount_money",
+                "total_money",
+                "approved_money",
+                "status",
+                "source_type",
+                "card_details",
+                "location_id",
+                "order_id",
+                "receipt_number",
+                "receipt_url",
+                "version_token"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/payment/properties/id",
+                    "type": "string",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Hl1UVubZEnF3kNlPfTps92mxkKWZY"
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/payment/properties/created_at",
+                    "type": "string",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-10-04T18:33:26.217Z"
+                    ]
+                },
+                "updated_at": {
+                    "$id": "#/properties/payment/properties/updated_at",
+                    "type": "string",
+                    "title": "The updated_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-10-04T18:33:26.396Z"
+                    ]
+                },
+                "amount_money": {
+                    "$id": "#/properties/payment/properties/amount_money",
+                    "type": "object",
+                    "title": "The amount_money schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "amount": 100,
+                            "currency": "USD"
+                        }
+                    ],
+                    "required": [
+                        "amount",
+                        "currency"
+                    ],
+                    "properties": {
+                        "amount": {
+                            "$id": "#/properties/payment/properties/amount_money/properties/amount",
+                            "type": "integer",
+                            "title": "The amount schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                100
+                            ]
+                        },
+                        "currency": {
+                            "$id": "#/properties/payment/properties/amount_money/properties/currency",
+                            "type": "string",
+                            "title": "The currency schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "USD"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "total_money": {
+                    "$id": "#/properties/payment/properties/total_money",
+                    "type": "object",
+                    "title": "The total_money schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "amount": 100,
+                            "currency": "USD"
+                        }
+                    ],
+                    "required": [
+                        "amount",
+                        "currency"
+                    ],
+                    "properties": {
+                        "amount": {
+                            "$id": "#/properties/payment/properties/total_money/properties/amount",
+                            "type": "integer",
+                            "title": "The amount schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                100
+                            ]
+                        },
+                        "currency": {
+                            "$id": "#/properties/payment/properties/total_money/properties/currency",
+                            "type": "string",
+                            "title": "The currency schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "USD"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "approved_money": {
+                    "$id": "#/properties/payment/properties/approved_money",
+                    "type": "object",
+                    "title": "The approved_money schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "amount": 100,
+                            "currency": "USD"
+                        }
+                    ],
+                    "required": [
+                        "amount",
+                        "currency"
+                    ],
+                    "properties": {
+                        "amount": {
+                            "$id": "#/properties/payment/properties/approved_money/properties/amount",
+                            "type": "integer",
+                            "title": "The amount schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                100
+                            ]
+                        },
+                        "currency": {
+                            "$id": "#/properties/payment/properties/approved_money/properties/currency",
+                            "type": "string",
+                            "title": "The currency schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "USD"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "status": {
+                    "$id": "#/properties/payment/properties/status",
+                    "type": "string",
+                    "title": "The status schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "COMPLETED"
+                    ]
+                },
+                "delay_duration": {
+                    "$id": "#/properties/payment/properties/delay_duration",
+                    "type": "string",
+                    "title": "The delay_duration schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "PT168H"
+                    ]
+                },
+                "delay_action": {
+                    "$id": "#/properties/payment/properties/delay_action",
+                    "type": "string",
+                    "title": "The delay_action schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "CANCEL"
+                    ]
+                },
+                "delayed_until": {
+                    "$id": "#/properties/payment/properties/delayed_until",
+                    "type": "string",
+                    "title": "The delayed_until schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-10-11T18:33:26.217Z"
+                    ]
+                },
+                "source_type": {
+                    "$id": "#/properties/payment/properties/source_type",
+                    "type": "string",
+                    "title": "The source_type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "CARD"
+                    ]
+                },
+                "card_details": {
+                    "$id": "#/properties/payment/properties/card_details",
+                    "type": "object",
+                    "title": "The card_details schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "status": "CAPTURED",
+                            "card": {
+                                "card_brand": "VISA",
+                                "last_4": "1111",
+                                "exp_month": 11,
+                                "exp_year": 2022,
+                                "fingerprint": "sq-1-sCsJQynWfoL48IyismyNjOs6DT1BwdQu72Hi24szpZvtrH7Ps1SpDV4yfVS_L50-nQ",
+                                "card_type": "CREDIT",
+                                "prepaid_type": "NOT_PREPAID",
+                                "bin": "411111"
+                            },
+                            "entry_method": "KEYED",
+                            "cvv_status": "CVV_ACCEPTED",
+                            "avs_status": "AVS_ACCEPTED",
+                            "statement_description": "SQ *DEFAULT TEST ACCOUNT",
+                            "card_payment_timeline": {
+                                "authorized_at": "2021-10-04T18:33:26.324Z",
+                                "captured_at": "2021-10-04T18:33:26.396Z"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "status",
+                        "card",
+                        "entry_method",
+                        "cvv_status",
+                        "avs_status",
+                        "statement_description",
+                        "card_payment_timeline"
+                    ],
+                    "properties": {
+                        "status": {
+                            "$id": "#/properties/payment/properties/card_details/properties/status",
+                            "type": "string",
+                            "title": "The status schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "CAPTURED"
+                            ]
+                        },
+                        "card": {
+                            "$id": "#/properties/payment/properties/card_details/properties/card",
+                            "type": "object",
+                            "title": "The card schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "card_brand": "VISA",
+                                    "last_4": "1111",
+                                    "exp_month": 11,
+                                    "exp_year": 2022,
+                                    "fingerprint": "sq-1-sCsJQynWfoL48IyismyNjOs6DT1BwdQu72Hi24szpZvtrH7Ps1SpDV4yfVS_L50-nQ",
+                                    "card_type": "CREDIT",
+                                    "prepaid_type": "NOT_PREPAID",
+                                    "bin": "411111"
+                                }
+                            ],
+                            "required": [
+                                "card_brand",
+                                "last_4",
+                                "exp_month",
+                                "exp_year",
+                                "fingerprint",
+                                "card_type",
+                                "prepaid_type",
+                                "bin"
+                            ],
+                            "properties": {
+                                "card_brand": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/card_brand",
+                                    "type": "string",
+                                    "title": "The card_brand schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "VISA"
+                                    ]
+                                },
+                                "last_4": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/last_4",
+                                    "type": "string",
+                                    "title": "The last_4 schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "1111"
+                                    ]
+                                },
+                                "exp_month": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/exp_month",
+                                    "type": "integer",
+                                    "title": "The exp_month schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        11
+                                    ]
+                                },
+                                "exp_year": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/exp_year",
+                                    "type": "integer",
+                                    "title": "The exp_year schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        2022
+                                    ]
+                                },
+                                "fingerprint": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/fingerprint",
+                                    "type": "string",
+                                    "title": "The fingerprint schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "sq-1-sCsJQynWfoL48IyismyNjOs6DT1BwdQu72Hi24szpZvtrH7Ps1SpDV4yfVS_L50-nQ"
+                                    ]
+                                },
+                                "card_type": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/card_type",
+                                    "type": "string",
+                                    "title": "The card_type schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "CREDIT"
+                                    ]
+                                },
+                                "prepaid_type": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/prepaid_type",
+                                    "type": "string",
+                                    "title": "The prepaid_type schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "NOT_PREPAID"
+                                    ]
+                                },
+                                "bin": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card/properties/bin",
+                                    "type": "string",
+                                    "title": "The bin schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "411111"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "entry_method": {
+                            "$id": "#/properties/payment/properties/card_details/properties/entry_method",
+                            "type": "string",
+                            "title": "The entry_method schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "KEYED"
+                            ]
+                        },
+                        "cvv_status": {
+                            "$id": "#/properties/payment/properties/card_details/properties/cvv_status",
+                            "type": "string",
+                            "title": "The cvv_status schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "CVV_ACCEPTED"
+                            ]
+                        },
+                        "avs_status": {
+                            "$id": "#/properties/payment/properties/card_details/properties/avs_status",
+                            "type": "string",
+                            "title": "The avs_status schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "AVS_ACCEPTED"
+                            ]
+                        },
+                        "statement_description": {
+                            "$id": "#/properties/payment/properties/card_details/properties/statement_description",
+                            "type": "string",
+                            "title": "The statement_description schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SQ *DEFAULT TEST ACCOUNT"
+                            ]
+                        },
+                        "card_payment_timeline": {
+                            "$id": "#/properties/payment/properties/card_details/properties/card_payment_timeline",
+                            "type": "object",
+                            "title": "The card_payment_timeline schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "authorized_at": "2021-10-04T18:33:26.324Z",
+                                    "captured_at": "2021-10-04T18:33:26.396Z"
+                                }
+                            ],
+                            "required": [
+                                "authorized_at",
+                                "captured_at"
+                            ],
+                            "properties": {
+                                "authorized_at": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card_payment_timeline/properties/authorized_at",
+                                    "type": "string",
+                                    "title": "The authorized_at schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "2021-10-04T18:33:26.324Z"
+                                    ]
+                                },
+                                "captured_at": {
+                                    "$id": "#/properties/payment/properties/card_details/properties/card_payment_timeline/properties/captured_at",
+                                    "type": "string",
+                                    "title": "The captured_at schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "2021-10-04T18:33:26.396Z"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "location_id": {
+                    "$id": "#/properties/payment/properties/location_id",
+                    "type": "string",
+                    "title": "The location_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "LBRWT0ZR2RWSM"
+                    ]
+                },
+                "order_id": {
+                    "$id": "#/properties/payment/properties/order_id",
+                    "type": "string",
+                    "title": "The order_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "gOinNNypGx1AZYQc1w2Du4R5ELXZY"
+                    ]
+                },
+                "risk_evaluation": {
+                    "$id": "#/properties/payment/properties/risk_evaluation",
+                    "type": "object",
+                    "title": "The risk_evaluation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "created_at": "2021-10-04T18:33:26.324Z",
+                            "risk_level": "NORMAL"
+                        }
+                    ],
+                    "required": [
+                        "created_at",
+                        "risk_level"
+                    ],
+                    "properties": {
+                        "created_at": {
+                            "$id": "#/properties/payment/properties/risk_evaluation/properties/created_at",
+                            "type": "string",
+                            "title": "The created_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2021-10-04T18:33:26.324Z"
+                            ]
+                        },
+                        "risk_level": {
+                            "$id": "#/properties/payment/properties/risk_evaluation/properties/risk_level",
+                            "type": "string",
+                            "title": "The risk_level schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "NORMAL"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "receipt_number": {
+                    "$id": "#/properties/payment/properties/receipt_number",
+                    "type": "string",
+                    "title": "The receipt_number schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Hl1U"
+                    ]
+                },
+                "receipt_url": {
+                    "$id": "#/properties/payment/properties/receipt_url",
+                    "type": "string",
+                    "title": "The receipt_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://squareupsandbox.com/receipt/preview/Hl1UVubZEnF3kNlPfTps92mxkKWZY"
+                    ]
+                },
+                "version_token": {
+                    "$id": "#/properties/payment/properties/version_token",
+                    "type": "string",
+                    "title": "The version_token schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "E6FytVsh03PeuBd3meC4XtqnsbhgqfVVdChirVdobiN6o"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

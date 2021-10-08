@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "\"Capstone 2 project. Eccommerce website for live coral.\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"deans",
+    "list",
+    "coral",
+    "eccommerce",
+    "live\""
+  ],
+  "author": "\"Lucas Lambert\"",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonschema": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
+    "pg": "^8.7.1",
+    "request": "^2.88.2",
+    "square": "^14.1.0",
+    "supertest": "^6.1.6",
+    "uuid": "^3.4.0"
+  }
+}
