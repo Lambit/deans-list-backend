@@ -15,7 +15,7 @@ returning json as an object with the key users.
 
 Authorization required: admin token passed through headers */ 
 
-router.get('/', ensureAdmin, async function (req, res, next) {
+router.get('/', async function (req, res, next) {
     try {
         let users = await User.getAllUsers();
         return res.json({users});
