@@ -1,4 +1,4 @@
-const db = require("../app/db");
+const db = require("../db");
 const User = require("../modules/user");
 const { createToken } = require("../token/tokens");
 

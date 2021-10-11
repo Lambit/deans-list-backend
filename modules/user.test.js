@@ -2,8 +2,8 @@ const {
     NotFoundError,
     BadRequestError,
     UnauthorizedError,
-  } = require("../app/expressError");
-  const db = require("../app/db");
+  } = require("../expressError");
+  const db = require("../db");
   const User = require("./user");
 
   /************************************** logIn */

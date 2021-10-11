@@ -5,7 +5,7 @@ const router = new express.Router();
 const { createToken } = require("../token/tokens");
 const registerUserSchema = require("../schemas/registerUser.json");
 const userLoginSchema = require("../schemas/userLogin.json");
-const { BadRequestError } = require("../app/expressError");
+const { BadRequestError } = require("../expressError");
 
 /** Auth routes URL looks like http://localhost:3001/auth 
  * 

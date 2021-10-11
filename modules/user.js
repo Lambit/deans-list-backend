@@ -1,12 +1,12 @@
-const db = require("../app/db");
+const db = require("../db");
 const bcrypt = require("bcrypt");
 const {
   NotFoundError,
   BadRequestError,
   UnauthorizedError,
-} = require("../app/expressError");
+} = require("../expressError");
 
-const { BCRYPT_WORK_FACTOR } = require("../app/config");
+const { BCRYPT_WORK_FACTOR } = require("../config");
 
 
 class User {

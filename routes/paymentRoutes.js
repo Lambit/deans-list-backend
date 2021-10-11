@@ -1,7 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 const jsonschema = require("jsonschema");
-const { BadRequestError } = require("../app/expressError");
+const { BadRequestError } = require("../expressError");
 const { client, myIdempotencyKey, paymentsApi, locationsApi } = require("../square-utilities/squareClient");
 const { LOCATION_ID } = require('../secrets/secrets');
 const paymentSchema = require("../schemas/paymentSchema.json"); 

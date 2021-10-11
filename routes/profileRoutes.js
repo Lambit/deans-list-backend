@@ -1,7 +1,7 @@
 const express = require('express');
 const router = new express.Router();
 const { ensureLoggedIn } = require("../middleware/auth");
-const { UnauthorizedError } = require("../app/expressError");
+const { UnauthorizedError } = require("../expressError");
 
 /* profile routes URL looks like http://localhost:3001/profile */
 

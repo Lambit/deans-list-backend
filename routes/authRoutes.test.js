@@ -1,6 +1,6 @@
 const request = require("supertest");
 
-const app = require("../app/index");
+const app = require("../index");
 
 const {
     commonBeforeAll,

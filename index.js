@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require('cors');
-const { NotFoundError } = require("./app/expressError");
+const { NotFoundError } = require("./expressError");
 const { authenticateJWT } = require("./middleware/auth");
 const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRoutes");
