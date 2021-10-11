@@ -1,10 +1,10 @@
 const express = require("express");
 const router = new express.Router();
-const jsonschema = require("jsonschema");
 const { BadRequestError } = require("../expressError");
 const { client, myIdempotencyKey, paymentsApi, locationsApi } = require("../square-utilities/squareClient");
-const { LOCATION_ID } = require('../config');
-const paymentSchema = require("../schemas/paymentSchema.json"); 
+const { LOCATION_ID } = require('../config'); 
+
+console.log("location", LOCATION_ID);
 
 //  Test POST route for payments to Square API
 

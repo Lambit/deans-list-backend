@@ -7,9 +7,13 @@ const SECRET_KEY = process.env.SECRET_KEY || 'secret-dev';
 
 const PORT = +process.env.PORT || 3001;
 
+console.log('port:', PORT);
+
 // development
 const SANDBOX_ACCESS_TOKEN = process.env.SANDBOX_ACCESS_TOKEN;
 const SANDBOX_APPLICATION_ID = process.env.SANDBOX_APPLICATION_ID;
+
+console.log('config-token:', SANDBOX_ACCESS_TOKEN, 'config-id:', SANDBOX_APPLICATION_ID);
 
 // production
 const SQUARE_APPLICATION_ID = process.env.SQUARE_APPLICATION_ID;
