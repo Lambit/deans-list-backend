@@ -1,13 +1,11 @@
 const { ApiError, Client, Environment } = require('square');
-const { SANDBOX_ACCESS_TOKEN, SQUARE_ACCESS_TOKEN } = require("../secrets/secrets");
+const { SANDBOX_ACCESS_TOKEN, SQUARE_ACCESS_TOKEN } = require("../config");
 const { v4: uuidv4 } = require('uuid');
 
 const accessToken = SANDBOX_ACCESS_TOKEN; 
 
 /* Generate random key  using uuid4 function for idempotencyKey */ 
 let myIdempotencyKey = uuidv4();
-
-
 
 
 /* Set Square Sandbox credentials by creating a new Client with

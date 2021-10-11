@@ -7,10 +7,16 @@ const SECRET_KEY = process.env.SECRET_KEY || 'secret-dev';
 
 const PORT = +process.env.PORT || 3001;
 
-const PORT_NUMBER = process.env.PORT_NUMBER;
+// development
+const SANDBOX_ACCESS_TOKEN = process.env.SANDBOX_ACCESS_TOKEN;
+const SANDBOX_APPLICATION_ID = process.env.SANDBOX_APPLICATION_ID;
 
+// production
+const SQUARE_APPLICATION_ID = process.env.SQUARE_APPLICATION_ID;
+const SQUARE_ACCESS_TOKEN = process.env.SQUARE_ACCESS_TOKEN;
 
-console.log(PORT_NUMBER);
+// location for dev and pro
+const LOCATION_ID = process.env.LOCATION_ID;
 
 // Use dev database, testing database, or via env var, production database
 function getDatabaseUri() {
@@ -34,6 +40,11 @@ console.log("---");
 module.exports = {
   SECRET_KEY,
   PORT,
+  SANDBOX_ACCESS_TOKEN,
+  SANDBOX_APPLICATION_ID,
+  SQUARE_APPLICATION_ID,
+  SQUARE_ACCESS_TOKEN,
+  LOCATION_ID,
   BCRYPT_WORK_FACTOR,
   getDatabaseUri, 
 };
