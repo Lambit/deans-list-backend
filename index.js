@@ -1,11 +1,11 @@
 const express = require("express");
 const cors = require('cors');
-const { NotFoundError } = require("./expressError");
-const { authenticateJWT } = require("../middleware/auth");
-const userRoutes = require("../routes/userRoutes");
-const authRoutes = require("../routes/authRoutes");
-const profileRoutes = require("../routes/profileRoutes");
-const paymentRoutes = require("../routes/paymentRoutes");
+const { NotFoundError } = require("./app/expressError");
+const { authenticateJWT } = require("./middleware/auth");
+const userRoutes = require("./routes/userRoutes");
+const authRoutes = require("./routes/authRoutes");
+const profileRoutes = require("./routes/profileRoutes");
+const paymentRoutes = require("./routes/paymentRoutes");
 
 const morgan = require("morgan");
 const app = express();

@@ -72,18 +72,16 @@ const paymentSchema = require("../schemas/paymentSchema.json");
 // });
 
 
+
+/* Post route sent to the API with data from the Square payment form. Parsed like above example. */ 
+
 router.post('/', async (req,res,next) => {
   try {
-    const validator = jsonschema.validate(req.body, paymentSchema);
-    if (!validator.valid) {
-      const errs = validator.errors.map(e => e.stack);
-      throw new BadRequestError(errs);
-    }
-
     const payloadParse = req.body;
 
     const payload = {
       sourceId: payloadParse.nonce,
+      verificationToken: payloadParse.token,
       idempotencyKey: myIdempotencyKey,
       autocomplete: true,
       locationId: LOCATION_ID,
@@ -92,10 +90,13 @@ router.post('/', async (req,res,next) => {
         currency: "USD"
       },
     };
+
+    console.log(payload);
     
     const results = await client.paymentsApi.createPayment(payload).raw_body;
-    console.log(results);
+    
     res.json(results);
+
   } catch(e) {
     return next(e);
   }
