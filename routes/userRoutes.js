@@ -3,6 +3,15 @@ const router = new express.Router();
 const { ensureCorrectUserOrAdmin, ensureAdmin } = require("../middleware/auth");
 const User = require('../modules/user');
 
+const {SANDBOX_ACCESS_TOKEN, SANDBOX_APPLICATION_ID } = require("../config");
+
+const {PORT} = require("../config");
+
+console.log('port:', PORT);
+
+
+
+console.log('config-token:', SANDBOX_ACCESS_TOKEN, 'config-id:', SANDBOX_APPLICATION_ID);
 
 /* User routes URL looks like http://localhost:3001/users */ 
 
