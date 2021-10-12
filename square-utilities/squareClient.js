@@ -4,7 +4,6 @@ const { v4: uuidv4 } = require('uuid');
 
 const accessToken = SAND_ACCESS; 
 
-console.log('accessToken:', accessToken);
 
 /* Generate random key  using uuid4 function for idempotencyKey */ 
 let myIdempotencyKey = uuidv4();
