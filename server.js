@@ -6,4 +6,4 @@ const { API } = require("./config");
 //     console.log(`Started on http://localhost:${PORT}`);
 //   });
 
-app.listen(API);
+app.listen({API});
