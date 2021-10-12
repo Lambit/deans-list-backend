@@ -4,8 +4,6 @@ const { BadRequestError } = require("../expressError");
 const { client, myIdempotencyKey, paymentsApi, locationsApi } = require("../square-utilities/squareClient");
 const { LOCATION_ID } = require('../config'); 
 
-console.log("location", LOCATION_ID);
-
 //  Test POST route for payments to Square API
 
 // URL looks like http://localhost:3001/v2/payments
