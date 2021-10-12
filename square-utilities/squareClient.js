@@ -1,8 +1,8 @@
 const { ApiError, Client, Environment } = require('square');
-const { SANDBOX_ACCESS } = require("../config"); 
+const { SAND_ACCESS } = require("../config"); 
 const { v4: uuidv4 } = require('uuid');
 
-const accessToken = SANDBOX_ACCESS; 
+const accessToken = SAND_ACCESS; 
 
 console.log('accessToken:', accessToken);
 
