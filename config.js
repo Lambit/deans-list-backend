@@ -9,7 +9,6 @@ const SECRET_KEY = process.env.SECRET_KEY || 'secret-dev';
 
 const BASE_URL = process.env.BASE_URL;
 
-console.log('port:', PORT);
 
 // development
 const SANDBOX_ACCESS_TOKEN = process.env.SANDBOX_ACCESS_TOKEN;
