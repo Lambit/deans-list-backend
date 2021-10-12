@@ -11,6 +11,8 @@ console.log(PORT);
 
 const BASE_URL = process.env.BASE_URL;
 
+console.log(BASE_URL);
+
 // development
 const SAND_ACCESS = process.env.SANDBOX_ACCESS_TOKEN;
 const SAND_APP_ID = process.env.SANDBOX_APPLICATION_ID;
@@ -37,13 +39,14 @@ const BCRYPT_WORK_FACTOR = 12;
 
 console.log("DB Config:".green);
 console.log("SECRET_KEY:".yellow, SECRET_KEY);
-// console.log("PORT:".yellow, PORT.toString());
+console.log("PORT:".yellow, PORT.toString());
 console.log("BCRYPT_WORK_FACTOR".yellow, BCRYPT_WORK_FACTOR);
 console.log("Database:".yellow, getDatabaseUri());
 console.log("---");
 
 module.exports = {
   SECRET_KEY,
+  PORT,
   BASE_URL,
   SAND_ACCESS,
   SAND_APP_ID,
