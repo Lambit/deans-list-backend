@@ -20,7 +20,6 @@ app.use("/users", userRoutes);
 app.use("/profile", profileRoutes);
 app.use("/v2/payments", paymentRoutes);
 
-app.use(express.static(path.resolve(__dirname, "build")));
 
 /* Handle 404 errors -- this matches everything */
 app.use(function (req, res, next) {
