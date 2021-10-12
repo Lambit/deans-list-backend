@@ -7,7 +7,7 @@ const SECRET_KEY = process.env.SECRET_KEY || 'secret-dev';
 
 // const PORT = +process.env.PORT || 3001;
 
-const API = process.env.NODE_ENV === 'production' ? 'https://git.heroku.com/deans-list-backend.git' : 'http://localhost:3001';
+const BASE_URL = process.env.BASE_URL;
 
 console.log('port:', PORT);
 
@@ -45,7 +45,7 @@ console.log("---");
 
 module.exports = {
   SECRET_KEY,
-  PORT,
+  BASE_URL,
   API,
   SANDBOX_ACCESS_TOKEN,
   SANDBOX_APPLICATION_ID,
