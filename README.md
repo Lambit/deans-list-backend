@@ -5,17 +5,17 @@ Dean’s List Coral is an Ecommerce website for marketing and distributing live 
 
 # BACKEND - BUILT WITH  
 
-Node.js
+* Node.js
 
-Express
+* Express
 
-Square
+* Square
 
-PostgreSQL
+* PostgreSQL
 
-Jest
+* Jest
 
-Supertest
+* Supertest
 
 (View package.json for the rest of the dependencies.)
 
