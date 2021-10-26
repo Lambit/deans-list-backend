@@ -22,9 +22,6 @@ Dean’s List Coral is an Ecommerce website for marketing and distributing live 
 
 # GETTING STARTED  
 
-To create and seed the PostgreSQL database, cd into the backend directory run the command
-
-### `node deans-list-seed.sql`
 
 After installing Node and Nodemon use these commands to start up the applications backend. Copy the port in terminal and paste it in browser.
 
